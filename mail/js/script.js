@@ -20,7 +20,6 @@ function()
   {
     var item = lista[i];
     console.log(item);
-
     if (mail == item)
     {
       verifica = true;
