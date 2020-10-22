@@ -2,8 +2,8 @@
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // variabili
-var player;
-var pc;
+var playerDado;
+var pcDado;
 
 
 // creo due eventi click per i due bottoni
@@ -13,18 +13,24 @@ var bottonePlayer = document.getElementById('bottone_1');
 bottonePlayer.addEventListener('click',
  function()
  {
-   document.getElementById('giocatore').innerHTML = Math.floor(Math.random() * 6) + 1 ;
- }
-)
+   var playerDado = Math.floor(Math.random() * 6) + 1 ;
+   console.log(playerDado);
+   document.getElementById('giocatore').innerHTML = playerDado;
 
+   var pcDado = Math.floor(Math.random() * 6) + 1 ;
+   document.getElementById('computer').innerHTML = pcDado;
+   console.log(pcDado);
 
-// bottone 2 che tira il dado per il giocatore
-var bottonePc = document.getElementById('bottone_2');
-bottonePc.addEventListener('click',
- function()
- {
-   document.getElementById('computer').innerHTML = Math.floor(Math.random() * 6) + 1 ;
- }
-)
 
 // stabilisco il vincitore dal risultato
+// confronto i numeri usciti e stampo il risultato
+    if (playerDado > pcDado) {
+      document.getElementById('vincitore').innerHTML = "Hai vinto tu"
+    } else if (playerDado < pcDado) {
+      document.getElementById('vincitore').innerHTML = "Ha vinto il pc"
+    } else {
+      document.getElementById('vincitore').innerHTML = "La partita è finita in pareggio"
+    }
+
+  }
+)
