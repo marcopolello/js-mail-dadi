@@ -19,9 +19,9 @@ check.addEventListener('click',
 function(){
     //mail data da input utente
     var mail = document.getElementById('indirizzo').value;
-    // console.log(mail);
     // guardo se la mail è uguale a uno degli elementi della lista array
     if (mail === item) {
+      console.log(mail);
       document.getElementById('mail_ok').innerHTML = "la tua mail è corretta";
-    } 
+    }
 });
