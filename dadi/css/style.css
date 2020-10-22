@@ -1,0 +1,25 @@
+main{
+  background-color: green;
+  margin: 20px auto;
+  min-height: 300px;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+#giocatore{
+  font-size: 30px;
+  margin: 20px;
+  background-color: blue;
+  height: 50px;
+  width: 10%;
+}
+#computer{
+  font-size: 30px;
+ margin: 20px;
+ background-color: red;
+ height: 50px;
+ width: 10%;
+}
