@@ -15,10 +15,10 @@ bottonePlayer.addEventListener('click',
  {
    var playerDado = Math.floor(Math.random() * 6) + 1 ;
    console.log(playerDado);
-   document.getElementById('giocatore').innerHTML = playerDado;
+   document.getElementById('giocatore').innerHTML = "tu hai fatto: <br> " + playerDado;
 
    var pcDado = Math.floor(Math.random() * 6) + 1 ;
-   document.getElementById('computer').innerHTML = pcDado;
+   document.getElementById('computer').innerHTML = "il pc fatto: <br> " + pcDado;
    console.log(pcDado);
 
 
