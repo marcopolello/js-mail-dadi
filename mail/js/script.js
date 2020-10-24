@@ -13,6 +13,7 @@ var check = document.getElementById('controlla');
 check.addEventListener('click',
 function()
 {
+  document.getElementById('mail_ok').style.display = "block";
   //mail data da input utente
   var mail = document.getElementById('indirizzo').value;
   var verifica = false;
@@ -28,5 +29,15 @@ function()
   if (verifica == true) {
     document.getElementById('mail_ok').innerHTML = "la tua mail è corretta";
   } else {document.getElementById('mail_ok').innerHTML = "la tua mail non è corretta";}
+
+  // bottone per resettare campi
+  var annulla = document.getElementById('cancella');
+  annulla.addEventListener('click',
+  function()
+  {
+    document.getElementById('form').reset();
+    document.getElementById('mail_ok').style.display = "none";
+  }
+  );
 }
 );

@@ -1,5 +1,18 @@
+h1{text-align: center;}
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: grey;
+  width: 300px;
+  height: 150px;
+  padding: 50px;
+}
 #mail_ok{
   background-color: lightblue;
   width: 300px;
-  min-height: 300px;
+  min-height: 100px;
+  text-align: center;
+  font-size: 30px;
 }
